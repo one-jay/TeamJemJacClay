@@ -2,15 +2,15 @@ import java.io.Serializable;
 
 public class Player implements Serializable{
   //attribute
-  private string name;
+  private String name;
   //constructor
   public Player(){}
   //getter
-  public string getName(){
+  public String getName(){
     return name;
   }
   //setter
-  public void setName(string name){
+  public void setName(String name){
     Player.name = name;
   }
 
