@@ -1,16 +1,17 @@
 import java.io.Serializable;
 
 public class Player implements Serializable{
-  //private type attribute;
+
+  private string name;
 
   public Player(){}
 
-  //public type getter(){
-    //return attribute;
-  //}
+  public string getName(){
+    return name;
+  }
 
-  //public void seter(type attribute){
-    //instance.attribute = attribute;
-  //}
+  public void setName(string name){
+    Player.name = name;
+  }
 
 }
