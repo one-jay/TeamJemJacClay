@@ -17,7 +17,7 @@
  * and tools. Perhaps not?
 
  * --Jacalyn Boggs */
- 
+
 import java.io.Serializable;
 
 public class Game implements Serializable{
@@ -30,7 +30,7 @@ public class Game implements Serializable{
   //private ArrayList<tools> = new ArrayList<tools>;
   private ArrayList<ListItem> animals = new ArrayList<ListItem>();
   private ArrayList<ListItem> tools = new ArrayList<ListItem>();
-  private ListItem provisions;
+  private ArrayList<ListItem> provisions = new ArrayList<ListItem>();
 //constructor
   public Game(){}
 //getters and setters
