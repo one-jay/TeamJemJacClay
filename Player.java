@@ -11,10 +11,12 @@ public class Player implements Serializable{
   }
   //setter
   public void setName(String name){
-    Player.name = name;
+    this.name = name; //was getting an error compiling Player.name,
+    //changed to this.name and it compiled fine..
   }
 
   // i don't know what the rest of this means
+  /*
   @Override
   public String toString(){
     return "Player{" + "name=" + name + ", bestTime=" + bestTime + "}";
@@ -48,5 +50,5 @@ public class Player implements Serializable{
     }
     return true;
   }
-
+  */ //this was all optional, so i might just delete it if we don't need it
 }
