@@ -19,10 +19,15 @@ import java.io.Serializable;
  * --Jacalyn Boggs */
 
 public class Game implements Serializable{
-  private theMap theMap;
-  private thePlayer thePlayer;
-  private cropData cropData;
-  private team[] TeamMember;
-  private ArrayList<animals> = new ArrayList<animals>();
-  private ArrayList<tools> = new ArrayList<tools>;
+  private Map theMap;
+  private Player thePlayer;
+  private CropData cropData;
+  private Team[] TeamMember;
+  //private ArrayList<animals> = new ArrayList<animals>();
+  //private ArrayList<tools> = new ArrayList<tools>;
+  private ListItem provisions;
+  private ListItem[] animals;
+    ArrayList<ListItem> animalList = new ArrayList<ListItem>();
+  private ListItem[] tools;
+    ArrayList<ListItem> toolsList = new ArrayList<ListItem>();
 }
