@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public class CropData{
+public class CropData implements Serializable{
 //attributes
   private int year;
   private int population;
