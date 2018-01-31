@@ -1,27 +1,26 @@
 //by Clayton
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
-//if this class should be an enum,
-//do we need a list of the TeamMember names and titles?
-public class TeamMember implements Serializable{
+public enum TeamMember implements Serializable{
 
+//members
+Henry("Henry Jones", "Team Lead"),
+Bill("Bill Smith", "GitHub expert"),
+Ann("Ann Jackson", "Chief Coder");
+
+//attributes
   private String name;
   private String title;
-
+//constructor
   public TeamMember(){}
-//also, if this class should be an enum,
-//then there shouldn't be any setter methods
+//no setter methods for enum
   public String getName(){
     return name;
-  }
-  public void setName(String name){
-    this.name = name;
   }
   public String getTitle(){
     return title;
   }
-  public void setTitle(String title){
-    this.title = title;
-  }
+
 }
