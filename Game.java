@@ -1,4 +1,4 @@
-import java.io.Serializable;
+
 /* This bean will be for "Game" in the City of Aaron
 /* Needs to have (from Model Layer PDF):
  * - theMap: theMap
@@ -17,17 +17,56 @@ import java.io.Serializable;
  * and tools. Perhaps not?
 
  * --Jacalyn Boggs */
+ 
+import java.io.Serializable;
 
 public class Game implements Serializable{
+//attributes
   private Map theMap;
   private Player thePlayer;
   private CropData cropData;
-  private Team[] TeamMember;
+  private TeamMember[] team;
   //private ArrayList<animals> = new ArrayList<animals>();
   //private ArrayList<tools> = new ArrayList<tools>;
+  private ArrayList<ListItem> animals = new ArrayList<ListItem>();
+  private ArrayList<ListItem> tools = new ArrayList<ListItem>();
   private ListItem provisions;
-  private ListItem[] animals;
-    ArrayList<ListItem> animalList = new ArrayList<ListItem>();
-  private ListItem[] tools;
-    ArrayList<ListItem> toolsList = new ArrayList<ListItem>();
+//constructor
+  public Game(){}
+//getters and setters
+  public Map getTheMap(){
+    return theMap;
+  }
+  public void setTheMap(Map theMap){
+    this.theMap = theMap;
+  }
+
+  public Player getThePlayer(){
+    return thePlayer;
+  }
+  public void setThePlayer(Player thePlayer){
+    this.thePlayer = thePlayer;
+  }
+
+  public CropData getCropData(){
+    return cropData;
+  }
+  public void setCropData(CropData cropData){
+    this.cropData = cropData;
+  }
+//get set TeamMember here
+  public ArrayList<ListItem> getAnimals(){
+    return animals;
+  }
+  public void setAnimals(ArrayList<ListItem> animals){
+    this.animals = animals;
+  }
+
+  public ArrayList<ListItem> getTools(){
+    return tools;
+  }
+  public void setTools(ArrayList<ListItem> tools){
+    this.tools = tools;
+  }
+//get set provisions here
 }
