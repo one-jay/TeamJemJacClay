@@ -12,7 +12,7 @@ public class Player implements Serializable{
   //setter
   public void setName(String name){
     this.name = name; //was getting an error compiling Player.name,
-    //changed to this.name and it compiled fine..
+    //changed to this.name and it compiled fine...
   }
 
   // i don't know what the rest of this means
