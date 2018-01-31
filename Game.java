@@ -28,9 +28,9 @@ public class Game implements Serializable{
   private TeamMember[] team;
   //private ArrayList<animals> = new ArrayList<animals>();
   //private ArrayList<tools> = new ArrayList<tools>;
-  private ArrayList<ListItem> animals = new ArrayList<ListItem>();
-  private ArrayList<ListItem> tools = new ArrayList<ListItem>();
-  private ArrayList<ListItem> provisions = new ArrayList<ListItem>();
+  private ArrayList<ListItem> animals;
+  private ArrayList<ListItem> tools;
+  private ArrayList<ListItem> provisions;
 //constructor
   public Game(){}
 //getters and setters
