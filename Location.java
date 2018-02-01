@@ -6,11 +6,17 @@ public class Location implements Serializable{
   private String symbol;
   //constructor
   public Location(){}
-  //getter
+  //getter and setter 
   public String getDescription(){
     return description;
   }
-  //setter
   public void setDescription(String description){
-    this.description = description; 
+    this.description = description;
   }
+  public String getSymbol(){
+    return symbol;
+  }
+  public void setSymbol(String symbol){
+      this.symbol = symbol;
+  }
+}
