@@ -1,3 +1,5 @@
+//by Clayton
+
 import java.io.Serializable;
 
 public class Location implements Serializable{
@@ -6,7 +8,7 @@ public class Location implements Serializable{
   private String symbol;
   //constructor
   public Location(){}
-  //getter and setter 
+  //getter and setter
   public String getDescription(){
     return description;
   }
