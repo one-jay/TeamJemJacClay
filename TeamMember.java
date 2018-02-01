@@ -13,14 +13,10 @@ Ann("Ann Jackson", "Chief Coder");
 //attributes
   private String name;
   private String title;
-//constructor
-  public TeamMember(){}
-//no setter methods for enum
-  public String getName(){
-    return name;
-  }
-  public String getTitle(){
-    return title;
+  
+  TeamMember(String name, String title) {
+  this.name = name;
+  this.title = title;
   }
 
 }
