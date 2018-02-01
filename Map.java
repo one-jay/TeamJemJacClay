@@ -4,7 +4,9 @@ public class Map implements Serializable{
   //attributes
   private int rowCount;
   private int colCount;
-  //private locations[][]Location //need help here
+  //private locations[][]Location
+  //need help here
+  //
 
   //constructor
   public Map(){}
