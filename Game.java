@@ -69,5 +69,10 @@ public class Game implements Serializable{
   public void setTools(ArrayList<ListItem> tools){
     this.tools = tools;
   }
-//get set provisions here
+  public ArrayList<ListItem> getProvisions(){
+    return provisions;
+  }
+  public void setProvisions(ArrayList<ListItem> provisions){
+    this.provisions = provisions;
+  }
 }
