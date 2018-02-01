@@ -11,9 +11,9 @@ public class Game implements Serializable{
   private Map theMap;
   private Player thePlayer;
   private CropData cropData;
-  private TeamMember[] team;
-  //private ArrayList<animals> = new ArrayList<animals>();
-  //private ArrayList<tools> = new ArrayList<tools>;
+  private TeamMember team[];
+    //The Game class does not really need to include a reference to the TeamMember enum.
+    // You can safely ignore this in the class diagram. - Roger deBry
   private ArrayList<ListItem> animals;
   private ArrayList<ListItem> tools;
   private ArrayList<ListItem> provisions;

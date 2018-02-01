@@ -4,9 +4,7 @@ public class Map implements Serializable{
   //attributes
   private int rowCount;
   private int colCount;
-  //private locations[][]Location
-  //need help here
-  //
+  private Location locations[][]; //i think this is right
 
   //constructor
   public Map(){}
@@ -25,6 +23,9 @@ public class Map implements Serializable{
   public void setColCount(int colCount){
     this.colCount = colCount;
   }
-
   //how to do methods for double array?
+  //getLocations
+  //
+  //setLocations
+  //
 }
