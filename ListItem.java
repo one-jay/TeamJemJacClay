@@ -21,4 +21,9 @@ public class ListItem implements Serializable{
   public void setNumber(int number){
     this.number = number;
   }
+  //Putting toString() here?? -- Jem
+@Override
+public String toString() {
+    return "ListItem{" + "name=" + name + ",number " + number + '}';
+}
 }
