@@ -6,14 +6,14 @@ import java.util.ArrayList;
 public enum TeamMember implements Serializable{
 
 //members
-Henry("Henry Jones", "Team Lead"),
-Bill("Bill Smith", "GitHub expert"),
-Ann("Ann Jackson", "Chief Coder");
+Clayton("Clayton Thomas", "Master of Duct Tape"),
+Jemifer("Jemifer Judilla", "International Superstar"),
+Jacalyn("Jacalyn Boggs", "Bringer of Chocolate");
 
 //attributes
   private String name;
   private String title;
-  
+
   TeamMember(String name, String title) {
   this.name = name;
   this.title = title;
