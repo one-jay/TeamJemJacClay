@@ -40,13 +40,10 @@ public class Game implements Serializable{
   public void setCropData(CropData cropData){
     this.cropData = cropData;
   }
-//get TeamMember here
-      
-  //set TeamMember here    
-  }
-  }
+  /*get TeamMember here
 
- public 
+  set TeamMember here */
+
   public ArrayList<ListItem> getAnimals(){
     return animals;
   }
@@ -67,21 +64,44 @@ public class Game implements Serializable{
     this.provisions = provisions;
   }
 
-}
+  public static void main(String[] args) {
+    //set ListItem instance -- Jem: should this be here in Game class?
+    //I hope I'm doing this right because I'm not sure how to do it for Arrays
 
+    /*Set Player instance.
+     *I've added this back in from where it got deleted.
+     *Also, I fixed a bunch of errors that got added in overnight due to a
+     *mistake higher in the code.
+     *There are only six errors showing right now, all with the list item.
+     *Jem, I think you have it almost right.
+     *Can someone check my code, because nothing prints to my temrinal when
+     *I run the file. 
+     * - Jacalyn */
 
-public static void main(String[] args) {
-//set ListItem instance -- Jem: should this be here in Game class?
-//I hope I'm doing this right because I'm not sure how to do it for Arrays
+    Player playerOne = new Player();
+    playerOne.setName("Alma The Missionary");
+
+    String playerOneName = playerOne.getName();
+    System.out.println(playerOne.toString());
+
+    //set Location instance - Jacalyn
+    Location location = new Location();
+    location.setDescription("The City of Aaron near Nephihah");
+
+    String locationDescription = location.getDescription();
+    System.out.println(location.toString());
+
+    //From Jem
     ListItem[] animalsOne = New ListItem[ItemCount];
 
     //for animals
+
     animalsOne.setName("sheep");
     animalsOne.setNumber(12.00);
 
     String animalsOneName = animalsOne.getName();
     double animalsOneNumber = animalsOne.getNumber();
-    
+
     System.out.println(animalsOne.toString());
 
     //for tools
@@ -94,7 +114,7 @@ public static void main(String[] args) {
     double animalsOneNumber = toolsOne.getNumber();
 
     System.out.println(toolsOne.toString());
-    
+
     //for provisions
     ListItem[] provisionsOne = New ListItem[ItemCount];
 
@@ -105,8 +125,5 @@ public static void main(String[] args) {
     double provisionsOneNumber = provisionsOne.getNumber();
 
     System.out.println(toolsOne.toString());
-    
+  }
 }
-
-    
-
