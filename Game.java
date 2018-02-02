@@ -73,7 +73,7 @@ public class Game implements Serializable{
 public static void main(String[] args) {
 //set ListItem instance -- Jem: should this be here in Game class?
 //I hope I'm doing this right because I'm not sure how to do it for Arrays
-    ListItem animalsOne = New ListItem();
+    ListItem[] animalsOne = New ListItem[ItemCount];
 
     //for animals
     animalsOne.setName("sheep");
@@ -85,7 +85,7 @@ public static void main(String[] args) {
     System.out.println(animalsOne.toString());
 
     //for tools
-    ListItem toolsOne = New ListItem();
+    ListItem[] toolsOne = New ListItem[ItemCount];
 
     toolsOne.setName("sword");
     toolsOne.setNumber(7.00);
@@ -96,7 +96,7 @@ public static void main(String[] args) {
     System.out.println(toolsOne.toString());
     
     //for provisions
-    ListItem provisionsOne = New ListItem();
+    ListItem[] provisionsOne = New ListItem[ItemCount];
 
     provisionsOne.setName("helmet");
     provisionsOne.setNumber(7.00);
