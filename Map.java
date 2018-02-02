@@ -25,9 +25,18 @@ public class Map implements Serializable{
   public void setColCount(int colCount){
     this.colCount = colCount;
   }
-  //how to do methods for double array?
-  //getLocations
-  //
+  //how to do methods for double array? Ans://Maybe like this?? - Jem
+  public Location[][] getLocations() {
+      return locations;
+}
   //setLocations
-  //
+  public void setLocations(Location Locations) {
+      this.locations = locations;
+  }
+
+    private static class locations {
+
+        public locations() {
+        }
+    }
 }
