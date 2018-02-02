@@ -66,19 +66,47 @@ public class Game implements Serializable{
   public void setProvisions(ArrayList<ListItem> provisions){
     this.provisions = provisions;
   }
+
 }
+
 
 public static void main(String[] args) {
 //set ListItem instance -- Jem: should this be here in Game class?
-//I hope I'm doing this right
-    ListItem animalOne = New ListItem();
+//I hope I'm doing this right because I'm not sure how to do it for Arrays
+    ListItem animalsOne = New ListItem();
 
-    animalOne.setName("sheep");
-    animalOne.setNumber(12.00);
+    //for animals
+    animalsOne.setName("sheep");
+    animalsOne.setNumber(12.00);
 
-    String animalOneName = animalOne.getName();
-    double animalOneNumber = animalOne.getTime();
+    String animalsOneName = animalsOne.getName();
+    double animalsOneNumber = animalsOne.getNumber();
+    
+    System.out.println(animalsOne.toString());
 
-    System.out.println("Name = " + animalOneNume + ", number = " + animalOneNumber);
+    //for tools
+    ListItem toolsOne = New ListItem();
+
+    toolsOne.setName("sword");
+    toolsOne.setNumber(7.00);
+
+    String animalsOneName = toolsOne.getName();
+    double animalsOneNumber = toolsOne.getNumber();
+
+    System.out.println(toolsOne.toString());
+    
+    //for provisions
+    ListItem provisionsOne = New ListItem();
+
+    provisionsOne.setName("helmet");
+    provisionsOne.setNumber(7.00);
+
+    String provisionsOneName = provisionsOne.getName();
+    double provisionsOneNumber = provisionsOne.getNumber();
+
+    System.out.println(toolsOne.toString());
+    
 }
+
+    
 
