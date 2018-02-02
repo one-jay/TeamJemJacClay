@@ -21,4 +21,8 @@ public class Location implements Serializable{
   public void setSymbol(String symbol){
       this.symbol = symbol;
   }
+  @Override
+  public String toString() {
+      return "You are in " + description;
+  }
 }

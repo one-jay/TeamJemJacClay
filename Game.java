@@ -74,8 +74,6 @@ public class Game implements Serializable{
      *mistake higher in the code.
      *There are only six errors showing right now, all with the list item.
      *Jem, I think you have it almost right.
-     *Can someone check my code, because nothing prints to my temrinal when
-     *I run the file. 
      * - Jacalyn */
 
     Player playerOne = new Player();
@@ -86,10 +84,11 @@ public class Game implements Serializable{
 
     //set Location instance - Jacalyn
     Location location = new Location();
-    location.setDescription("The City of Aaron near Nephihah");
+    location.setDescription("The City of Aaron, near Nephihah");
 
     String locationDescription = location.getDescription();
     System.out.println(location.toString());
+
 
     //From Jem
     ListItem[] animalsOne = New ListItem[ItemCount];
@@ -125,5 +124,6 @@ public class Game implements Serializable{
     double provisionsOneNumber = provisionsOne.getNumber();
 
     System.out.println(toolsOne.toString());
+
   }
 }

@@ -15,6 +15,6 @@ public class Player implements Serializable{
   }
   @Override
   public String toString() {
-      return "Greetings to you " + name;
+      return "Greetings to you, " + name;
   }
 }
