@@ -24,6 +24,6 @@ public class ListItem implements Serializable{
   //Putting toString() here?? -- Jem
 @Override
 public String toString() {
-    return "ListItem{" + "name=" + name + ",number " + number + '}';
+    return "ListItem{" + "name=" + name + ",number=" + number + '}';
 }
 }
