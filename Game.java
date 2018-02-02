@@ -6,6 +6,7 @@
 import java.io.Serializable;
 import java.util.ArrayList;
 
+
 public class Game implements Serializable{
 //attributes
   private Map theMap;
@@ -62,5 +63,20 @@ public class Game implements Serializable{
   }
   public void setProvisions(ArrayList<ListItem> provisions){
     this.provisions = provisions;
+  }
+
+//The Main portion of the code: 
+  public static void main(String[] args) {
+//Set Player instance
+  Player playerOne = new Player();
+  playerOne.setName("Alma The Missionary");
+  String playerOneName = playerOne.getName();
+  System.out.println(playerOne.toString());
+
+//set Location instance
+  Location location = new Location();
+  location.setDescription("The City of Aaron near Nephihah");
+  String locationDescription = location.getDescription();
+  System.out.println(location.toString());
   }
 }
